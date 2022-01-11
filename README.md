@@ -7,3 +7,4 @@ So far I have ammo, maps add to the bot the bot's discord is: https://discord.gg
 Im in there if you need help with the bot or just have questions my discord is: That One Loner#8226
 Bot invite is: https://discord.com/oauth2/authorize?client_id=927527121218306118&permissions=1644972474359&scope=bot
 Bot invite is on the discord server as well
+And more info on the bot if you do "+binfo"
