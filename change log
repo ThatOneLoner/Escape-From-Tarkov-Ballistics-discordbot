@@ -1,0 +1,15 @@
+change log
+
++ Added change log
+
++ Commands are no longer deleted when you use one in a server.
+
++ Added maps
+
++ Added setup - addeds "ammo" role to the server
+
++ Made send/senda use a role instead of anyone being able to use it
+
++ change made time: 3:13 PM 1/11/2022
+
+V1
