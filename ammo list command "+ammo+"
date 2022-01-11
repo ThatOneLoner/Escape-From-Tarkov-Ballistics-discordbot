@@ -66,12 +66,6 @@ or copy the command from list below
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
-    },
-    {
-      "storage": "0",
-      "varName": "",
-      "reason": "command message (bot)",
-      "name": "Delete Message"
     }
   ]
 }
