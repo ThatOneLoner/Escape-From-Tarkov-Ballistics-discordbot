@@ -1,0 +1,32 @@
+The bot for ammo will grab links off of the Escape From Tarkov gamepedia. If you do "+ammo" it will send all ammo's if you do
+"+ammo+" it will give you a list of all ammo's so you can pick one ammo type
+
+${member} here:
+https://escapefromtarkov.gamepedia.com/Ballistics
+
+
+
+****
+
+{
+  "name": "ammo",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "nbLMK",
+  "actions": [
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "${member} here:\nhttps://escapefromtarkov.gamepedia.com/Ballistics",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "command message (bot)",
+      "name": "Delete Message"
+    }
+  ]
+}
