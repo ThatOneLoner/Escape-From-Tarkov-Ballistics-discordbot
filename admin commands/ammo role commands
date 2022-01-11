@@ -1,0 +1,235 @@
+How do I setup +send & +senda? 
+You will need to add a role named "ammo" that will let anyone with that role use +send & +senda
+If you do "+setup" the bot will make the role for your server
++send & +senda they both tell the user it was sent to who sent the command 
+
+
+*senda and send code*
+
+{
+  "name": "send",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "tpKLS",
+  "actions": [
+    {
+      "info": "1",
+      "find": "ammo",
+      "storage": "1",
+      "varName": "ammo role",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "ammo role",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check If Member has Role"
+    },
+    {
+      "channel": "2",
+      "varName": "",
+      "message": "Hey I'm Ballistics homie, I'm here to make it easy for you to find all the ammo info you will need in the world of escape from tarkov.\nsee you soon pmc - ${member}\ndo \"+help\" for commands thanks everyone for your time\nall commands work in dm's if it does not it will give you an error message\n\n**help message below**\n\n```\n+help - this message\n\n+ammo - ammo chart\n\n+binfo - gives info about the bot\n\n+ammo+ - ammo list and how to use it\n\n+(ammo_type) from list to see it use \"+ammo+\"\n```\nyou need \"ammo\" role to use (can only be used in a server not in the bot's dms)\n`+send (@user)` - sends that user the help command / bot info\n`+senda (@user)` - sends the ammo chart to the (@user)\n\nadmin commands\n\n```\n+role (@user) - adds the \"ammo\" role to a user & let's that user use \"+send\" & \"+senda\"\n+setup - adds the ammo role to the server (role is only there so \"+send\" & \"+senda\" the bot will say who used it so it can be reported and all u have to do is take the ammo role from that user\n\n+setupinfo - tells u about why setup is there\n\n\nwho sent you the message: ${member} help/bot info message sent to you by ${member}\n\n(report if someone is spaming the command to the servers admins)\n",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "command message (bot)",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "ERROR! ${member} you don't have the \"ammo\" role",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ]
+}
+
+senda//
+
+{
+  "name": "senda",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "XPASi",
+  "actions": [
+    {
+      "info": "1",
+      "find": "ammo",
+      "storage": "1",
+      "varName": "send",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "send",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check If Member has Role"
+    },
+    {
+      "channel": "2",
+      "varName": "",
+      "message": "${mentionedUser} here: \nhttps://escapefromtarkov.gamepedia.com/Ballistics\n\nsent to you by ${member}, here is the ammo chart\n\n(report if someone is spaming the command to the servers admins)",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "command message (bot)",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "ERROR! ${member} you don't have the \"ammo\" role",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "0"
+}
+
+
+
+
+
+
+
+
+
+*setup code*
+
+{
+  "name": "setup",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "_id": "bnyJa",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "permission": "MANAGE_ROLES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "6",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "findammo",
+      "comparison": "8",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "0",
+      "iffalseVal": "12",
+      "name": "Check Variable Type"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "added ammo role to the server!\nadd the role to members you want to be able to do \"+send\" & \"+senda\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "info": "1",
+      "find": "ammo",
+      "storage": "1",
+      "varName": "findammo",
+      "name": "Find Role"
+    },
+    {
+      "roleName": "ammo",
+      "hoist": "false",
+      "mentionable": "false",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "!setup!",
+      "name": "Create Role"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "\"ammo\" role was added to the server by ${tempVars(\"bot\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "ERROR! Ballistics homie does not have \"manage roles\" for command to\nwork add \"manage roles\" to \"ammo bot\" for command to work or\nadd a role named \"ammo\" for \"+senda\" & \"+send\" to work and add it\nto members you want to be able to use \"+senda\" & \"+send\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "\"ammo\" role is on the server",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
