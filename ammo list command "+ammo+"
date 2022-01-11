@@ -1,0 +1,77 @@
+This command will give you a list of ammo types and if u copy one and send it to the bot it will give you a link to that ammo type on the Escape From Tarkov fandom
+
+**command** "+ammo+"
+
+${member}, here
+"+ammo+" for this command,
+
+do "+" then copy the ammo type u want to lookup list below
+or copy the command from list below
+```
++12x70mm
+
++20x70mm
+
++23x75mm
+
++9x18mm
+
++7.62x25mm
+
++9x19mm
+
++.45
+
++9x21mm
+
++5.7x28mm
+
++4.6x30mm
+
++9x39mm
+
++.366
+
++5.45x39mm
+
++5.56x45mm
+
++.300
+
++7.62x39mm
+
++7.62x51mm
+
++7.62x54mmR
+
++.338
+
++12.7x55mm
+
++40x46mm
+```
+
+**code**
+
+{
+  "name": "ammo+",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "YSMUW",
+  "actions": [
+    {
+      "channel": "1",
+      "varName": "",
+      "message": "${member}, here\n\"+ammo+\" for this command,\n\ndo \"+\" then copy the ammo type u want to lookup list below\nor copy the command from list below\n```\n+12x70mm\n\n+20x70mm\n\n+23x75mm\n\n+9x18mm\n\n+7.62x25mm\n\n+9x19mm\n\n+.45\n\n+9x21mm\n\n+5.7x28mm\n\n+4.6x30mm\n\n+9x39mm\n\n+.366\n\n+5.45x39mm\n\n+5.56x45mm\n\n+.300\n\n+7.62x39mm\n\n+7.62x51mm\n\n+7.62x54mmR\n\n+.338\n\n+12.7x55mm\n\n+40x46mm\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "command message (bot)",
+      "name": "Delete Message"
+    }
+  ]
+}
