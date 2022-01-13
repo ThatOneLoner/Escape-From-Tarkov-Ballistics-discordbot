@@ -13,3 +13,19 @@ change log
 + change made time: 3:13 PM 1/11/2022
 
 V1
+
++ mod commands
+
++ commands: 
++help                      ammo bot commands
++modHelp                   Lists available mod commands
++Kick [@user] [reason]     Kicks the mentioned user
++Ban [@user] [reason]      Bans the mentioned user
++Mute [@user]              Mutes the mentioned user
++Unmute [@user]            Unmutes the mentioned user
++DeleteChannel [#channel]  Deletes the mentioned channel
++DeleteRole [@role]     Deletes the mentioned role
+
++ full source code for the bot
+
+V1.5
