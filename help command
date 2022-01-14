@@ -3,7 +3,7 @@
 ${member}, Here
 
 **User commands**
-```
+
 +Help - this message
 
 +Ammo - ammo chart
@@ -15,14 +15,25 @@ ${member}, Here
 +(Ammo_Type) from list to see it use "+ammo+"
 
 +Maps - see a list of map commands copy the map you want to see
-```
+
 You need a role named "ammo" to use. Can only be used in a server not in the bot's DM's
 `+Send (@user)` - Sends that user the help command/bot info
 `+Senda (@user)` - Sends the ammo chart to the user you ping
 
 **Admin commands**
-```
-+Role (@user) - Adds the "ammo" role to a user & let's that user use "+send" & "+senda"
-+Setup - Adds the ammo role to the server (role is only there so "+send" & "+senda" the bot will say who used it so it can be reported and all u have to do is take the ammo role from that user.
 
-+SetupInfo - Tells you about why setup is there and how to use "+Send & +Senda" without giving the bot Permissions to "manage roles"
++Role (@user) - Adds the "ammo" role to a user & let's that user use "+send" & "+senda"
+you will need to add a role named "ammo" for the commands to work!
++ammorole-info - Tells you about why setup is there and how to use "+Send & +Senda" without giving the bot Permissions to "manage roles"
+
+**mod commands**
+
+
++help                      ammo bot commands
++modHelp                   Lists available mod commands
++Kick [@user] [reason]     Kicks the mentioned user
++Ban [@user] [reason]      Bans the mentioned user
++Mute [@user]              Mutes the mentioned user
++Unmute [@user]            Unmutes the mentioned user
++DeleteChannel [#channel]  Deletes the mentioned channel
++DeleteRole [@role]     Deletes the mentioned role
