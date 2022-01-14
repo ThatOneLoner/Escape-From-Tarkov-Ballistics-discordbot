@@ -16,6 +16,8 @@ V1
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
++ removed +setup role name for "+send" & "+senda" to work just add a role named "ammo" and add that to the members you want to use that command
+
 + mod commands
 
 + commands: 
