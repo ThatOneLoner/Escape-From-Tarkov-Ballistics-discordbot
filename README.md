@@ -1,5 +1,5 @@
 # Escape-From-Tarkov-Ballistics-discordbot
-A discord bot for the game Escape From Tarkov, mainly for ammo adding maps, and other stuff soon we have a discord if u want something added to the bot or want to help. Bot owner That One Loner#8226
+A discord bot for the game Escape From Tarkov, mainly for ammo adding maps, and other stuff soon we have a discord if u want something added to the bot or want to help. Bot owner cat whisperer mk. 3#7020
 
 This bot is made to help you find ammo for Escape From Tarkov.
 
@@ -9,7 +9,7 @@ So far I have ammo, maps add to the bot the bot's discord is: https://discord.gg
 
 Im in there if you need help with the bot or just have questions my discord is: That One Loner#8226
 
-Bot invite is: https://discord.com/oauth2/authorize?client_id=927527121218306118&permissions=1644972474359&scope=bot
+Bot invite is: https://discord.com/api/oauth2/authorize?client_id=927527121218306118&permissions=1644971949559&scope=bot
 
 Bot invite is on the discord server as well
 
